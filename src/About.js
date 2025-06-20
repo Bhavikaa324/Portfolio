@@ -9,9 +9,10 @@ function About() {
         <h2 style={{ color: '#19335c', fontSize: '2rem', fontWeight: 'bold', marginBottom: '1.2rem' }}>About Me</h2>
         <div style={{ textAlign: 'left', fontSize: '1.1rem', color: '#19335c', lineHeight: 1.7 }}>
           <p>
-            This is a short description about you. You can mention your background, interests, and what drives you as a developer. <br />
-            For example: <br />
-            "I'm a passionate developer with a love for building interactive web applications. I enjoy learning new technologies and contributing to open source. My goal is to create impactful solutions and grow as a software engineer."
+          I'm a final-year student pursuing B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning. I have a growing understanding of software development, data structures, and algorithmic problem-solving, and I enjoy approaching challenges with a strategic and innovative mindset.
+<br/><br/>
+Currently developing a growing understanding of Machine Learning, Deep Learning, and Cloud Computing, with hands-on exposure to applying AI concepts in real-world contexts. Recently started exploring cloud technologies to better understand how scalable infrastructure supports intelligent applications and data-driven systems.
+<br/><br/>I'm passionate about continuous learning, building real-world solutions, and collaborating with others to bring ideas to life.
           </p>
         </div>
       </div>
