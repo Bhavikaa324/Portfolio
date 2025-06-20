@@ -7,10 +7,10 @@ import Contact from './Contact';
 import { FaLinkedin, FaGithub, FaEnvelope, FaTelegram } from "react-icons/fa";
 
 const socialLinks = [
-  { href: 'https://linkedin.com/', label: 'LinkedIn', icon: <FaLinkedin size={34} color="#0A66C2" /> },
-  { href: 'hhttps://github.com/Bhavikaa324', label: 'GitHub', icon: <FaGithub size={34} color="#fff" style={{ background: '#181717', borderRadius: '50%' }} /> },
+  { href: 'https://www.linkedin.com/in/bhavika-puppalwar-186a962a4', label: 'LinkedIn', icon: <FaLinkedin size={34} color="#0A66C2" /> },
+  { href: 'https://github.com/Bhavikaa324', label: 'GitHub', icon: <FaGithub size={34} color="#fff" style={{ background: '#181717', borderRadius: '50%' }} /> },
   { href: 'mailto:puppalwarbhavika@gmail.com', label: 'Mail', icon: <FaEnvelope size={34} color="#EA4335" /> },
-  { href: 'https://t.me/', label: 'Telegram', icon: <FaTelegram size={34} color="#229ED9" /> },
+  { href: 'https://t.me/bhavika0324', label: 'Telegram', icon: <FaTelegram size={34} color="#229ED9" /> },
 ];
 
 const sections = [

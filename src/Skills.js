@@ -23,10 +23,10 @@ const techStack = [
 ];
 
 const dsaPlatforms = [
-  { name: 'LeetCode', url: 'https://leetcode.com/', icon: <SiLeetcode /> },
-  { name: 'Codeforces', url: 'https://codeforces.com/', icon: <SiCodeforces /> },
-  { name: 'HackerRank', url: 'https://www.hackerrank.com/', icon: <SiHackerrank /> },
-  { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/', icon: <SiGeeksforgeeks /> },
+  { name: 'LeetCode', url: 'https://leetcode.com/u/bhavika_0324/', icon: <SiLeetcode /> },
+  { name: 'CodeChef', url: 'https://www.codechef.com/users/bhavika_0324', icon: <SiCodeforces /> },
+  { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/puppalwarbhavika', icon: <SiHackerrank /> },
+  { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/user/puppalwar8xyi', icon: <SiGeeksforgeeks /> },
 ];
 
 function Skills() {
