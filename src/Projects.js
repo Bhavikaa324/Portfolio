@@ -4,21 +4,16 @@ const projects = [
   {
     name: 'SignSnap',
     tech: ['Python', 'Keras', 'TensorFlow', 'OpenCV', 'pyttsx3', 'Flask'],
-    description: 'Developed a real-time traffic sign recognition system using CNN and OpenCV, providing live detection and classification of road signs from a camera feed. Implemented audio feedback with a text-to-speech engine and a Flask web interface for interactive monitoring and control.',
-    github: 'https://github.com/yourusername/portfolio',
+    description: 'Developed a real-time traffic sign recognition system using CNN and OpenCV, providing live detection and classification of road signs from a camera feed. Implemented audio feedback with a text-to-speech engine and a Flask web interface for interactive monitoring and control. The system helps in making driving safer and smarter.',
+    github: 'https://github.com/Bhavikaa324/Sign_Snap',
   },
   {
     name: 'Subjective Answer Evaluator',
     tech: ['Python', 'Keras', 'TensorFlow', 'NLTK', 'scikit-learn', 'Flask'],
-    description: ' Built an automated answer evaluation system using LSTM and NLP to assess student responses based on semantic similarity. Delivered real-time scoring and feedback for efficient and objective grading through a Flask interface.',
-    github: 'https://github.com/yourusername/weather-app',
+    description: ' Built an automated answer evaluation system using LSTM and NLP to assess student responses based on semantic similarity. Delivered real-time scoring and feedback for efficient and objective grading through a Flask interface,  enabling fast, fair, and consistent.',
+    github: 'https://github.com/Bhavikaa324/Subjective-Answer-Evalution',
   },
-  {
-    name: 'Phrase Prediction and Sentence Autocomplete',
-    tech: ['React', 'API'],
-    description: 'A simple weather app that fetches and displays weather data.',
-    github: 'https://github.com/yourusername/weather-app',
-  },
+ 
   // Add more projects as needed
 ];
 
