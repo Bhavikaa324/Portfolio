@@ -32,11 +32,21 @@ function App() {
     <div className="main-layout">
       <aside className="sidebar">
         <div className="sidebar-content">
+          <div className="profile-photo">
+            <img 
+              src="/profile0.jpg" 
+              alt="Bhavika Puppalwar" 
+              className="profile-image"
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
+            />
+          </div>
           <h1 className="sidebar-name">Bhavika Puppalwar</h1>
           <div className="sidebar-title">AI Enthusiast | Web Developer</div>
           <div className="sidebar-socials">
             {socialLinks.map(link => (
-              <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" title={link.label} style={{ color: '#fff' }}>
+              <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" title={link.label} className="social-link">
                 {link.icon}
               </a>
             ))}

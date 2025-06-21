@@ -32,7 +32,7 @@ function Contact() {
         <input name="name" value={form.name} onChange={handleChange} placeholder="Your Name" required style={{ padding: '0.7rem', borderRadius: '6px', border: '1px solid #ccc', color: '#19335c' }} />
         <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Your Email" required style={{ padding: '0.7rem', borderRadius: '6px', border: '1px solid #ccc', color: '#19335c' }} />
         <textarea name="message" value={form.message} onChange={handleChange} placeholder="Your Message" required rows={4} style={{ padding: '0.7rem', borderRadius: '6px', border: '1px solid #ccc', color: '#19335c' }} />
-        <button type="submit" style={{ padding: '0.7rem', borderRadius: '6px', border: 'none', background: '#007bff', color: '#fff', fontWeight: 'bold', cursor: 'pointer' }}>Send</button>
+        <button type="submit" style={{ padding: '0.7rem', borderRadius: '6px', border: 'none', background: '#19335c', color: '#fff', fontWeight: 'bold', cursor: 'pointer' }}>Send</button>
       </form>
       {sent && <div style={{ color: 'green', fontSize: '1.1rem', marginTop: '1rem' }}>Message sent!</div>}
     </div>
