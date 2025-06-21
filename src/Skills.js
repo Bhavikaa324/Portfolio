@@ -1,8 +1,9 @@
 import React from 'react';
 import { 
-  SiCplusplus, SiPython, SiHtml5, SiCss3, SiJavascript, SiReact, SiOpenjdk, 
+  SiCplusplus, SiPython, SiHtml5, SiCss3, SiJavascript, SiReact, 
   SiFlask, SiOpencv, SiTensorflow, SiFigma, SiCanva, SiMysql, SiStreamlit,
-  SiLeetcode, SiCodeforces, SiHackerrank, SiGeeksforgeeks, SiC, SiNumpy, SiPandas, SiKeras, SiScikitlearn, 
+  SiLeetcode, SiCodeforces, SiHackerrank, SiGeeksforgeeks, SiC, SiNumpy, SiPandas, SiKeras, SiScikitlearn,
+  SiGit, SiJupyter, SiDocker
 } from "react-icons/si";
 
 const languages = [
@@ -14,7 +15,6 @@ const languages = [
   { name: 'JavaScript', icon: <SiJavascript />, color: '#F7DF1E', textColor: '#222' },
 ];
 
-
 const frameworks = [
   { name: 'Flask', icon: <SiFlask />, color: '#000' },
   { name: 'NumPy', icon: <SiNumpy />, color: '#013243' },
@@ -23,7 +23,17 @@ const frameworks = [
   { name: 'Keras', icon: <SiKeras />, color: '#D00000' },
   { name: 'Scikit-learn', icon: <SiScikitlearn />, color: '#F7931E' },
   { name: 'OpenCV', icon: <SiOpencv />, color: '#43c6f4' },
+  { name: 'Streamlit', icon: <SiStreamlit />, color: '#FF4B4B' },
   { name: 'React.js', icon: <SiReact />, color: '#20232A' },
+];
+
+const tools = [
+  { name: 'Git', icon: <SiGit />, color: '#F05032' },
+  { name: 'Jupyter', icon: <SiJupyter />, color: '#F37626' },
+  { name: 'Docker', icon: <SiDocker />, color: '#2496ED' },
+  { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' },
+  { name: 'Canva', icon: <SiCanva />, color: '#00C4CC' },
+  
 ];
 
 const dsaPlatforms = [
@@ -35,89 +45,68 @@ const dsaPlatforms = [
 
 function Skills() {
   return (
-    <div>
-      <h2 style={{ color: '#19335c', fontSize: '2rem' }}>Skills</h2>
-      <h2 style={{ color: '#19335c',fontSize: '1.3rem' }}>Programming Languages:</h2>
-      <div style={{ display: 'flex', gap: '0.7rem', flexWrap: 'wrap', margin: '1.5rem 0', color: '#19335c' }}>
-        {languages.map(lang => (
-          <span
-            key={lang.name}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              background: lang.color,
-              color: lang.textColor || '#fff',
-              borderRadius: '6px',
-              padding: '0.3rem 0.8rem',
-              fontWeight: 500,
-              fontSize: '1rem',
-              gap: '0.4rem',
-              boxShadow: '0 1px 4px rgba(0,0,0,0.07)'
-            }}
-          >
-            {lang.icon}
-            {lang.name}
-          </span>
-        ))}
-      </div>
-      <br/>
-      <h2 style={{ color: '#19335c',fontSize: '1.3rem' }}>Libraries/Frameworks:</h2>
-      <div style={{ display: 'flex', gap: '0.7rem', flexWrap: 'wrap', margin: '1.5rem 0', color: '#19335c' }}>
-        {frameworks.map(framework => (
-          <span
-            key={framework.name}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              background: framework.color,
-              color: '#fff',
-              borderRadius: '6px',
-              padding: '0.3rem 0.8rem',
-              fontWeight: 500,
-              fontSize: '1rem',
-              gap: '0.4rem',
-              boxShadow: '0 1px 4px rgba(0,0,0,0.07)'
-            }}
-          >
-            {framework.icon}
-            {framework.name}
-          </span>
-        ))}
+    <div className="skills-container">
+      <h2 className="skills-category-title">Skills</h2>
+      
+      <div className="skills-category">
+        <h3 className="skills-category-title1">Programming Languages</h3>
+        <ul className="skills-list">
+          {languages.map(lang => (
+            <li key={lang.name} className="skill-item" style={{ background: lang.color, color: lang.textColor || '#fff' }}>
+              {lang.icon}
+              {lang.name}
+            </li>
+          ))}
+        </ul>
       </div>
       
-      <br/>
-      <h2 style={{ color: '#19335c',fontSize: '1.3rem' }}>Databases:</h2>
-      <div style={{ display: 'flex', gap: '0.7rem', flexWrap: 'wrap', margin: '1.5rem 0', color: '#19335c' }}>
-        <span
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            background: '#4479A1',
-            color: '#fff',
-            borderRadius: '6px',
-            padding: '0.3rem 0.8rem',
-            fontWeight: 500,
-            fontSize: '1rem',
-            gap: '0.4rem',
-            boxShadow: '0 1px 4px rgba(0,0,0,0.07)'
-          }}
-        >
-          <SiMysql />
-          MySQL
-        </span>
+      <div className="skills-category">
+        <h3 className="skills-category-title1">Libraries/Frameworks</h3>
+        <ul className="skills-list">
+          {frameworks.map(framework => (
+            <li key={framework.name} className="skill-item" style={{ background: framework.color, color: '#fff' }}>
+              {framework.icon}
+              {framework.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <div className="skills-category">
+        <h3 className="skills-category-title1">Databases</h3>
+        <ul className="skills-list">
+          <li className="skill-item" style={{ background: '#4479A1', color: '#fff' }}>
+            <SiMysql />
+            MySQL
+          </li>
+        </ul>
+      </div>
+      
+      <div className="skills-category">
+        <h3 className="skills-category-title1">Tools</h3>
+        <ul className="skills-list">
+          {tools.map(tool => (
+            <li key={tool.name} className="skill-item" style={{ background: tool.color, color: '#fff' }}>
+              {tool.icon}
+              {tool.name}
+            </li>
+          ))}
+        </ul>
       </div>
       <br/>
-      <h2 style={{ color: '#19335c', fontSize: '2rem' }}>DSA Platforms</h2>
-      <ul style={{ display: 'flex', gap: '2.5rem', flexWrap: 'wrap', listStyle: 'none', paddingLeft: 0, fontSize: '1.08rem', color: '#19335c', margin: 0 }}>
-        {dsaPlatforms.map(platform => (
-          <li key={platform.name} style={{ display: 'flex', alignItems: 'center', gap: '0.7rem' }}>
-            <span style={{ fontSize: '1.3rem' }}>{platform.icon}</span>
-            <a href={platform.url} target="_blank" rel="noopener noreferrer" style={{ color: '#19335c' }}>{platform.name}</a>
-          </li>
-        ))}
-      </ul>
-    
-      <br/>
+      <div className="skills-category">
+        <h3 className="skills-category-title">DSA Platforms</h3>
+        <ul className="skills-list" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
+          {dsaPlatforms.map(platform => (
+            <li key={platform.name} className="skill-item" style={{ color: '#19335c' }}>
+              {platform.icon}
+              <a href={platform.url} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                {platform.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

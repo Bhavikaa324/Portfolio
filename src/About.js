@@ -3,14 +3,14 @@ import { TypeAnimation } from 'react-type-animation';
 
 function About() {
   return (
-    <div style={{ color: '#19335c', marginTop: '0rem' }}>
+    <div className="about-container">
       <TypeAnimation
         sequence={['Hey there!', 1000]}
         wrapper="h1"
         speed={50}
-        style={{ fontSize: '2rem', marginBottom: '0.5rem', color: '#19335c' }}
+        className="about-greeting"
       />
-      <div style={{ textAlign: 'left', fontSize: '1.1rem', color: '#19335c', lineHeight: 1.7 }}>
+      <div className="about-content">
         <p>
           I'm a final-year student pursuing B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning,  driven by a strategic problem-solving mindset and a growing interest in Machine Learning and Deep Learning, with a desire to contribute, grow, and apply innovative solutions .
           
