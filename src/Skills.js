@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   SiCplusplus, SiPython, SiHtml5, SiCss3, SiJavascript, SiReact, 
   SiFlask, SiOpencv, SiTensorflow, SiFigma, SiCanva, SiMysql, SiStreamlit,
-  SiLeetcode, SiCodeforces, SiHackerrank, SiGeeksforgeeks, SiC, SiNumpy, SiPandas, SiKeras, SiScikitlearn,
+  SiLeetcode, SiCodechef, SiHackerrank, SiGeeksforgeeks, SiC, SiNumpy, SiPandas, SiKeras, SiScikitlearn,
   SiGit, SiJupyter, SiDocker
 } from "react-icons/si";
 
@@ -39,7 +39,7 @@ const tools = [
 
 const dsaPlatforms = [
   { name: 'LeetCode', url: 'https://leetcode.com/u/bhavika_0324/', icon: <SiLeetcode /> },
-  { name: 'CodeChef', url: 'https://www.codechef.com/users/bhavika_0324', icon: <SiCodeforces /> },
+  { name: 'CodeChef', url: 'https://www.codechef.com/users/bhavika_0324', icon: <SiCodechef /> },
   { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/puppalwarbhavika', icon: <SiHackerrank /> },
   { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/user/puppalwar8xyi', icon: <SiGeeksforgeeks /> },
 ];
