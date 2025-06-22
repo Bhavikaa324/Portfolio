@@ -6,34 +6,35 @@ import {
   SiGit, SiJupyter, SiDocker
 } from "react-icons/si";
 
+const toClassName = (name) => `skill-${name.toLowerCase().replace('++', 'plusplus').replace('.', 'dot')}`;
+
 const languages = [
-  { name: 'C++', icon: <SiCplusplus />, color: '#00599C' },
-  { name: 'Python', icon: <SiPython />, color: '#3776AB' },
-  { name: 'C', icon: <SiC />, color: '#A8B9CC' },
-  { name: 'HTML', icon: <SiHtml5 />, color: '#E34F26' },
-  { name: 'CSS', icon: <SiCss3 />, color: '#1572B6' },
-  { name: 'JavaScript', icon: <SiJavascript />, color: '#F7DF1E', textColor: '#222' },
+  { name: 'C++', icon: <SiCplusplus /> },
+  { name: 'Python', icon: <SiPython /> },
+  { name: 'C', icon: <SiC /> },
+  { name: 'HTML', icon: <SiHtml5 /> },
+  { name: 'CSS', icon: <SiCss3 /> },
+  { name: 'JavaScript', icon: <SiJavascript /> },
 ];
 
 const frameworks = [
-  { name: 'Flask', icon: <SiFlask />, color: '#000' },
-  { name: 'NumPy', icon: <SiNumpy />, color: '#013243' },
-  { name: 'Pandas', icon: <SiPandas />, color: '#130654' },
-  { name: 'TensorFlow', icon: <SiTensorflow />, color: '#FF6F00' },
-  { name: 'Keras', icon: <SiKeras />, color: '#D00000' },
-  { name: 'Scikit-learn', icon: <SiScikitlearn />, color: '#F7931E' },
-  { name: 'OpenCV', icon: <SiOpencv />, color: '#43c6f4' },
-  { name: 'Streamlit', icon: <SiStreamlit />, color: '#FF4B4B' },
-  { name: 'React.js', icon: <SiReact />, color: '#20232A' },
+  { name: 'Flask', icon: <SiFlask /> },
+  { name: 'NumPy', icon: <SiNumpy /> },
+  { name: 'Pandas', icon: <SiPandas /> },
+  { name: 'TensorFlow', icon: <SiTensorflow /> },
+  { name: 'Keras', icon: <SiKeras /> },
+  { name: 'Scikit-learn', icon: <SiScikitlearn /> },
+  { name: 'OpenCV', icon: <SiOpencv /> },
+  { name: 'Streamlit', icon: <SiStreamlit /> },
+  { name: 'React.js', icon: <SiReact /> },
 ];
 
 const tools = [
-  { name: 'Git', icon: <SiGit />, color: '#F05032' },
-  { name: 'Jupyter', icon: <SiJupyter />, color: '#F37626' },
-  { name: 'Docker', icon: <SiDocker />, color: '#2496ED' },
-  { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' },
-  { name: 'Canva', icon: <SiCanva />, color: '#00C4CC' },
-  
+  { name: 'Git', icon: <SiGit /> },
+  { name: 'Jupyter', icon: <SiJupyter /> },
+  { name: 'Docker', icon: <SiDocker /> },
+  { name: 'Figma', icon: <SiFigma /> },
+  { name: 'Canva', icon: <SiCanva /> },
 ];
 
 const dsaPlatforms = [
@@ -46,15 +47,14 @@ const dsaPlatforms = [
 function Skills() {
   return (
     <div className="skills-container">
-      <h2 className="skills-category-title">Skills</h2>
       
       <div className="skills-category">
         <h3 className="skills-category-title1">Programming Languages</h3>
         <ul className="skills-list">
           {languages.map(lang => (
-            <li key={lang.name} className="skill-item" style={{ background: lang.color, color: lang.textColor || '#fff' }}>
+            <li key={lang.name} className={`skill-item ${toClassName(lang.name)}`}>
               {lang.icon}
-              {lang.name}
+              <span>{lang.name}</span>
             </li>
           ))}
         </ul>
@@ -64,9 +64,9 @@ function Skills() {
         <h3 className="skills-category-title1">Libraries/Frameworks</h3>
         <ul className="skills-list">
           {frameworks.map(framework => (
-            <li key={framework.name} className="skill-item" style={{ background: framework.color, color: '#fff' }}>
+            <li key={framework.name} className={`skill-item ${toClassName(framework.name)}`}>
               {framework.icon}
-              {framework.name}
+              <span>{framework.name}</span>
             </li>
           ))}
         </ul>
@@ -75,9 +75,9 @@ function Skills() {
       <div className="skills-category">
         <h3 className="skills-category-title1">Databases</h3>
         <ul className="skills-list">
-          <li className="skill-item" style={{ background: '#4479A1', color: '#fff' }}>
+          <li className="skill-item skill-mysql">
             <SiMysql />
-            MySQL
+            <span>MySQL</span>
           </li>
         </ul>
       </div>
@@ -86,22 +86,22 @@ function Skills() {
         <h3 className="skills-category-title1">Tools</h3>
         <ul className="skills-list">
           {tools.map(tool => (
-            <li key={tool.name} className="skill-item" style={{ background: tool.color, color: '#fff' }}>
+            <li key={tool.name} className={`skill-item ${toClassName(tool.name)}`}>
               {tool.icon}
-              {tool.name}
+              <span>{tool.name}</span>
             </li>
           ))}
         </ul>
       </div>
       <br/>
       <div className="skills-category">
-        <h3 className="skills-category-title">DSA Platforms</h3>
-        <ul className="skills-list" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
+        <h3 className="skills-category-title1">DSA Platforms</h3>
+        <ul className="skills-list dsa-platforms-list">
           {dsaPlatforms.map(platform => (
-            <li key={platform.name} className="skill-item" style={{ color: '#19335c' }}>
-              {platform.icon}
-              <a href={platform.url} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
-                {platform.name}
+            <li key={platform.name} className={`skill-item ${toClassName(platform.name)}`}>
+              <a href={platform.url} target="_blank" rel="noopener noreferrer">
+                {platform.icon}
+                <span>{platform.name}</span>
               </a>
             </li>
           ))}
